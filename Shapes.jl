@@ -12,3 +12,7 @@ function area(s::Square)
 end
 
 area(c::Circle) = π*c.r^2
+
+import Base.*
+
+*(c::Real, s::Square) = Square(c*s.a)
